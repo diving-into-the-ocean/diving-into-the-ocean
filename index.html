@@ -1,0 +1,175 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Home</title>
+<style>
+	.lxy{
+		color:white;
+		font-size: 60px;
+		z-index: 99;
+		font-weight: bold;
+		margin:30px;
+		text-shadow:0 0 5px #fff,0 0 20px rgb(201, 235, 254),10px -10px 30px rgb(85, 184, 246),-20px -20px 40px #34aeff,20px -40px 50px #0c80ec,-20px -60px 60px #1e4ce1,0 -80px 70px rgb(5, 44, 137),10px -90px 80px rgb(25, 2, 117);
+	}
+	.qunimade1{
+		position:absolute;
+		top:0;
+		left: 250px;
+		z-index: 10000;
+	}
+	.qunimades1{
+        position:absolute ;
+		top:200px;
+		font-size: 43px;
+		font-family: STFangSong;
+		left:270px;
+		z-index:9999
+	}
+	.qunimade2{
+		position:absolute;
+		top:0;
+		left: 600px;
+		z-index: 10000;
+	}
+	.qunimades2{
+        position:absolute ;
+		top:200px;
+		font-size: 43px;
+		font-family: STFangSong;
+		left:620px;
+		z-index:9999
+	}
+	.qunimade3{
+		position:absolute;
+		top:0;
+		left: 930px;
+		z-index: 10000;
+	}
+	.qunimades3{
+        position:absolute ;
+		top:200px;
+		font-size: 43px;
+		font-family: STFangSong;
+		left:950px;
+		z-index:9999
+	}
+	.qunimade4{
+		position:absolute;
+		top:0;
+		left: 1260px;
+		z-index: 10000;
+	}
+	.qunimades4{
+        position:absolute ;
+		top:200px;
+		font-size: 43px;
+		font-family: STFangSong;
+		left:1280px;
+		z-index:9999
+	}
+</style>
+<!-- Behavioral Meta Data -->
+<meta name="Christmas-Landing-Page" content="yes">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<!-- Styles -->
+<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/media-query.css">
+
+</head>
+<body>
+
+
+
+<div id="loader"></div>
+<!-- Parallax Container -->
+<div id="container" class="parallax-container snow">
+	<ul id="christmas_scene" class="christmas-scene" >
+		<!-- <li class="layer" data-depth="0.80"><div class="layer-5 layer-photo photo-zoom"></div></li> -->
+		<li class="layer" data-depth="0.60"><div class="layer-4 layer-photo photo-zoom"></div></li>
+		<li class="layer" data-depth="0.40"><div class="layer-3 layer-photo photo-zoom"></div></li>
+		<li class="layer" data-depth="0.20"><div class="layer-2 layer-photo photo-zoom"></div></li>
+		<li class="layer" data-depth="0.00"><div class="layer-1 layer-photo"></div></li>
+	</ul>
+	<!-- Countdown Container -->
+	<div class="qunimade1"><a href="https://gitee.com/"><img src="./images/countdown-globe.png"width=70%></a></div>
+    <div class="qunimades1">刘习羽</div>
+	<div class="qunimade2"><img src="./images/countdown-globe.png"width=70%></div>
+    <div class="qunimades2">夏祺风</div>
+	<div class="qunimade3"><img src="./images/countdown-globe.png"width=70%></div>
+    <div class="qunimades3">刘祖豪</div>
+	<div class="qunimade4"><img src="./images/countdown-globe.png"width=70%></div>
+    <div class="qunimades4">丁思源</div>
+	<!-- Merry Christmas Text -> You can replace with anything you like! -->
+	<div class="merry-christmas-text"><div class="lxy"><br><br>欢迎参观605寝室主页！祝老师元旦快乐！</div></div>
+    
+	<!-- Happy new year 2017 photo -->
+	<!-- <div class="happy-new-year"></div> -->
+    
+	<!-- Contact Pole Image -> From here the E-mail modal is triggered -->
+	<div id="mail_pole">
+		<img src="images/pole.png" class="img-responsive" alt="mail-pole" data-toggle="modal" data-target="#contact_modal">
+	</div>
+	<!-- Christmas Tree -->
+	<img src="images/christmas-tree.png" alt="christmas-tree" id="christmas_tree">
+</div>
+
+<!-- Send E-mail Modal -->
+<div class="modal fade" id="contact_modal" tabindex="-1" role="dialog">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-body">
+				<div class="col-md-12 mail-container">
+					<div class="col-md-12 padding-none bg-color">
+						<div class="col-md-12 text-center">It's Christmas!</div>
+						<div class="col-md-12 text-center">Don't be shy, Send us a message!</div>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<form class="col-md-12 padding-none">
+							<div class="col-md-6 col-xs-12">
+								<div class="col-md-12 padding-none">
+									<input type="text" class="mail-first-name" id="form_first_name" placeholder="First Name" />
+								</div>
+								<div class="col-md-12 padding-none">
+									<input type="text" class="mail-last-name" id="form_last_name" placeholder="Last Name" />
+								</div>
+								<div class="col-md-12 padding-none">
+									<input type="text" class="mail-email" id="form_valid_email" placeholder="E-mail" />
+								</div>
+								<div class="col-md-12 padding-none">
+									<textarea class="mail-message" id="form_message" placeholder="Message"></textarea>
+								</div>
+							</div>
+							<div class="col-md-6 col-xs-12 text-right">
+								<img src="images/form-image.png" alt="form-pattern-image">
+								<button class="btn form-submit-button" type="submit" id="submit_form_btn">Send</button>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="col-md-12 padding-none mail-container hidden">
+					<div class="col-md-12 padding-none bg-color thank-you-msg text-large" id="form_success_msg"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Scripts -->
+<script src="js/jquery-3.1.1.min.js"></script> 
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="js/jquery.countdown.js"></script> 
+<script src="js/jquery.parallax.js"></script>
+<script src="js/snow.js"></script>
+<script src="js/main.js"></script>
+<script>
+	// Parallax Init
+	$('#christmas_scene').parallax({
+		scalarX: 5,
+		scalarY: 15,
+		invertY: false
+	});
+</script>
+</body>
+</html>
